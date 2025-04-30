@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta property="og:image" content="" />
     <title>Ethan Sotka</title>
     <style>
 
@@ -103,10 +104,10 @@
       function copy(address) {
         const tempInput = document.createElement('input');
         tempInput.value = address;
-        document.body.appendChild(address);
+        document.body.appendChild(tempInput);
         tempInput.select();
         document.execCommand('copy');
-        document.body.removeChild(address);
+        document.body.removeChild(tempInput);
         alert("Copied to clipboard: " + address);
       }
     </script>
