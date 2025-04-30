@@ -10,6 +10,10 @@
         color: #333333;
       }
 
+      main{
+        flex:1
+      }
+
       footer{
         background-color: #E0E6ED;
         bottom: 0;
@@ -66,22 +70,24 @@
     />
   </head>
   <body>
-    <div class="center">
-       <img src="SeniorPhotoFixed.jpeg" alt="Photo of Me!" class="profile-pic" >
-       <h1>Ethan Sotka</h1>
-       <div>
-          <a href="https://github.com/esotka1" class="icon">
-             <i class="fab fa-github fa-2x"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/ethan-sotka" class="icon">
-             <i class="fab fa-linkedin fa-2x"></i>
-          </a>
-          <a href="Sotka_Resume_Apr_2025.docx.pdf" class="icon">
-             <i class="fas fa-file-alt fa-2x"></i>
-          </a>
-       </div>
-    </div>
-    <p> This is a test😁 </p>
+    <main>
+      <div class="center">
+         <img src="SeniorPhotoFixed.jpeg" alt="Photo of Me!" class="profile-pic" >
+         <h1>Ethan Sotka</h1>
+         <div>
+            <a href="https://github.com/esotka1" class="icon">
+              <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ethan-sotka" class="icon">
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="Sotka_Resume_Apr_2025.docx.pdf" class="icon">
+              <i class="fas fa-file-alt fa-2x"></i>
+            </a>
+         </div>
+      </div>
+      <p> This is a test😁 </p>
+    </main>
     <footer>
       <div class="center">
             <a href="#" onclick"copy('esotka@nd.edu')" class="icon">
@@ -96,10 +102,10 @@
       function copy(address) {
         const tempInput = document.createElement('input');
         tempInput.value = text;
-        document.body.appendChild(tempInput);
+        document.body.appendChild(address);
         tempInput.select();
         document.execCommand('copy');
-        document.body.removeChild(tempInput);
+        document.body.removeChild(address);
         alert("Copied to clipboard: " + text);
       }
     </script>
