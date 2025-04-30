@@ -12,7 +12,7 @@
       }
 
       main{
-        flex:1
+        flex:1;
       }
 
       footer{
@@ -91,10 +91,10 @@
     </main>
     <footer>
       <div class="center">
-            <a href="#" onclick"copy('esotka@nd.edu')" class="icon">
+            <a href="#" onclick="copy('esotka@nd.edu')" class="icon">
                <i class="fas fa-envelope  fa-2x"></i>
             </a>
-            <a href="#" onclick"copy('410-402-0535')" class="icon">
+            <a href="#" onclick="copy('410-402-0535')" class="icon">
                <i class="fas fa-phone  fa-2x"></i>
             </a>
       </div>
@@ -102,12 +102,12 @@
     <script>
       function copy(address) {
         const tempInput = document.createElement('input');
-        tempInput.value = text;
+        tempInput.value = address;
         document.body.appendChild(address);
         tempInput.select();
         document.execCommand('copy');
         document.body.removeChild(address);
-        alert("Copied to clipboard: " + text);
+        alert("Copied to clipboard: " + address);
       }
     </script>
   </body>
